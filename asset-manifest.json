@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vicc/static/css/main.43cd3aab.chunk.css",
-    "main.js": "/vicc/static/js/main.c98b3528.chunk.js",
-    "main.js.map": "/vicc/static/js/main.c98b3528.chunk.js.map",
+    "main.js": "/vicc/static/js/main.c18f2273.chunk.js",
+    "main.js.map": "/vicc/static/js/main.c18f2273.chunk.js.map",
     "runtime-main.js": "/vicc/static/js/runtime-main.035fe6d1.js",
     "runtime-main.js.map": "/vicc/static/js/runtime-main.035fe6d1.js.map",
     "static/css/2.c526f481.chunk.css": "/vicc/static/css/2.c526f481.chunk.css",
@@ -59,6 +59,6 @@
     "static/css/2.c526f481.chunk.css",
     "static/js/2.0891d93b.chunk.js",
     "static/css/main.43cd3aab.chunk.css",
-    "static/js/main.c98b3528.chunk.js"
+    "static/js/main.c18f2273.chunk.js"
   ]
 }
