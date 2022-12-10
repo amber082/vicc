@@ -1,31 +1,11 @@
-import { Flex, Image, Text, Stack, Avatar } from '@chakra-ui/react';
+import { Flex, Image, Text} from '@chakra-ui/react';
 import React from 'react'
 import Prabhupada from '../assets/prabhupada.svg'
-import Abhisek from '../assets/Abishek.JPG'
-
-
-const TestimonialAvatar = ({
-    src,
-    name,
-    title,
-  }) => {
-    return (
-      <Flex align='center' mb={5} direction={'row'}>
-        <Avatar src={src} alt={name} mr={2}/>
-        <Stack spacing={-1} align={'flex-start'}>
-          <Text fontWeight={600} color="#233862">{name}</Text>
-          <Text fontSize={'sm'} color={"#233862"}>
-            {title}
-          </Text>
-        </Stack>
-      </Flex>
-    );
-  };
 
 export default function About() {
     return (
       <div>
-        <Flex direction={{base:'column-reverse',md:'row'}} align='center' justify='space-evenly' bgColor={'#F0E6CB'} mb='5%' >
+        <Flex direction={{base:'column-reverse',md:'row'}} align='center' justify='space-evenly' bgColor={'#F0E6CB'} pb={{base:'40%',md:'0'}} mb={{base:'20%',md:'5%'}} >
             <Flex direction='column' align='flex-start' justify='space-around' m='20' data-aos='fade-down' boxSize={{base:'300',md:'450'}}>
                 <Text fontSize='4xl' my='3' fontWeight='950'>
                     About The Founder Acharya <Text color='#2C7D42'>A.C. Bhaktivedanta Swami Prabhupada</Text>

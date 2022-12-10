@@ -8,10 +8,8 @@ import {
     StatNumber,
     useColorModeValue,
   } from '@chakra-ui/react';
-  import { ReactNode } from 'react';
   import { MdOutlineLocalLibrary } from 'react-icons/md';
   import { GiTeacher } from 'react-icons/gi';
-  import { GoLocation } from 'react-icons/go';
   import {GiByzantinTemple} from 'react-icons/gi'
   import {TbToolsKitchen2} from 'react-icons/tb'
   import {MdMeetingRoom} from 'react-icons/md'

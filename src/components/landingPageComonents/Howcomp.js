@@ -2,11 +2,8 @@ import {
     Box,
     Text,
     Stack,
-    Button,
     useColorModeValue,
   } from '@chakra-ui/react';
-  import { Search2Icon, EmailIcon, ChatIcon } from '@chakra-ui/icons';
-  import { GrDeliver } from 'react-icons/gr'
   
   export default function Howcomp({Title,Content}) {
     return (

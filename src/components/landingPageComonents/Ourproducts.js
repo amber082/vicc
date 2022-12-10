@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Activity1 from '../../assets/activity1.png'
 import Activity2 from '../../assets/activity2.png'
 import Activity3 from '../../assets/activity3.png'
@@ -10,13 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {Flex, Stack, Text, Box } from '@chakra-ui/layout';
 import Explore from './Explore'
-import axios from 'axios'
-import {Link} from 'react-router-dom'
 
 
 export default function Ourproducts() {
-    const [data, setData] = useState({ hits: [] });
-    const [isLoading, setIsLoading] = useState(true);
 
     const settings = {
         className: "center",
@@ -51,22 +47,13 @@ export default function Ourproducts() {
             }]
     };
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const result = await axios.get(process.env.REACT_APP_PROXY+'/api/landproducts');
-            setData(result.data);
-            setIsLoading(false);
-        };
-        fetchData();
-    },[])
-
     return (
         <Box mb='5%'>
             <Flex direction='column' align='center' justify='center' m='5' data-aos='fade-down'>
-                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#000000">
+                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#000000" align={'center'}>
                     Activities At
                 </Text>
-                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#2C7D42">
+                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#2C7D42" align={'center'}>
                     Vedic India Cultural Center
                 </Text>
             </Flex>
@@ -79,9 +66,6 @@ export default function Ourproducts() {
                     <Product IMAGE={Activity5} name={"Food For Life: Prasadam Distribution"} price={"Food for Life at ISKCON Varanasi provides free healthy and sumptuous prasadam for all the visitors & guests."}/>
                 </Slider>
             </Stack>
-            <Flex direction='row' align='center' justify='center' m='8'>
-                <Explore/>
-            </Flex>
         </Box>
     )
 }

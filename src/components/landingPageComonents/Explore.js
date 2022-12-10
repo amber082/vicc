@@ -1,10 +1,17 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link, animateScroll as scroll } from "react-scroll";
 import {Button} from '@chakra-ui/react'
 
 export default function Explore() {
     return (
-        <Link to='/'>
+        <Link
+            activeClass="active"
+            to="donation"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={2000}
+        >
             <Button px='6'
                         mt='5' 
                         bg='#F0E6CB' 
@@ -13,7 +20,7 @@ export default function Explore() {
                         _hover={{bg:'green.700', boxShadow:'3xl', color:'white'}} 
                         boxShadow='xl'        
             >
-                EXPLORE NOW
+                DONATE NOW
             </Button>
         </Link>
     )

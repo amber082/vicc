@@ -8,7 +8,6 @@ import {
   Avatar,
 } from '@chakra-ui/react';
 import Aman from '../../assets/Aman.jpeg'
-import Arman from '../../assets/Arman.jpg'
 import Yash from '../../assets/Yash.jpeg'
 import Gokul from '../../assets/Gokul.jpg'
 

@@ -16,7 +16,8 @@ import {
           p={6}
           maxW={'330px'}
           w={'full'}
-          bg={useColorModeValue('white', 'gray.800')}
+          // bg={useColorModeValue('white', 'gray.800')}
+          bg='#F0E6CB'
           boxShadow={'2xl'}
           rounded={'lg'}
           pos={'relative'}
@@ -56,7 +57,7 @@ import {
             {/* <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
               B.Tech IIT BHU
             </Text> */}
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={700} align='center' p={10} color='#2C7D42'>
+            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={950} align='center' p={10} color='#2C7D42'>
               {name}
             </Heading>
             <Stack direction={'row'} align={'center'} >

@@ -6,9 +6,10 @@ import Whatwedo from './landingPageComonents/Whatwedo'
 import Glories from './landingPageComonents/Glories'
 import Ourproducts from './landingPageComonents/Ourproducts'
 import Ourfacilities from './landingPageComonents/OurFacilities'
-import Testimonial from './landingPageComonents/Testimonials'
 import Budget from './landingPageComonents/Budget';
+import Donation from './DonationComp'
 import About from './About'
+import DonationImage from '../assets/donation1.svg'
 
 
 
@@ -25,6 +26,7 @@ export default function Landing() {
             <Ourfacilities/>
             <Glories/>
             <Budget/>
+            <Donation/>
         </div>
     )
 }

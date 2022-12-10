@@ -9,8 +9,9 @@ import {
   Image,
   Flex
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Logo from "../assets/iskcon-logo.svg"
+import ContactUs from './Contact'
 
 // const Logo = () => {
 //   return (
@@ -60,11 +61,11 @@ const SocialButton = ({
 
 export default function SmallWithLogoLeft() {
   return (
-      <Box mt='-0'>
+      <Box mt='-0' id='footer'>
     <svg width="100%" height="100%" viewBox="0 0 722 67" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fillRule="evenodd" clipRule="evenodd" d="M0 0H30C60 0 120 0 181 10.0115C241 19.6379 301 39.2759 361 46.2069C421 53.1379 481 47.3621 542 47.3621C602 47.3621 662 53.1379 692 55.8333L722 58.5287V67H692C662 67 602 67 542 67C481 67 421 67 361 67C301 67 241 67 181 67C120 67 60 67 30 67H0V0Z" fill="#1E592E"/>
     </svg>
-    
+    <ContactUs/>
     <Box
       bg="#1E592E"
       color="#F0E6CB" >
@@ -81,16 +82,17 @@ export default function SmallWithLogoLeft() {
           <Image  w="100%" src={Logo}/>
       
         </Flex>
-        <Text>© 2022 Vedic Indian Cultural Center. All rights reserved</Text>
+        
+        <Text align={'center'}>© 2022 Vedic Indian Cultural Center. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
+          <SocialButton label={'Twitter'} href={'https://twitter.com/iskconvaranasi'}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
+          <SocialButton label={'YouTube'} href={'https://www.youtube.com/@ISKCONVaranasi'}>
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
-            <FaInstagram />
+          <SocialButton label={'Facebook'} href={'https://www.facebook.com/ISKCONVaranasiOfficial'}>
+            <FaFacebook />
           </SocialButton>
         </Stack>
       </Container>

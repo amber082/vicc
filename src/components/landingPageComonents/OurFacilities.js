@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import Activity1 from '../../assets/activity1.png'
+import React from 'react'
 import Facility1 from '../../assets/facility1.jpg'
 import Facility2 from '../../assets/facility2.jpg'
 import Facility3 from '../../assets/facility3.jpg'
@@ -14,13 +13,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {Flex, Stack, Text, Box } from '@chakra-ui/layout';
 import Explore from './Explore'
-import axios from 'axios'
-import {Link} from 'react-router-dom'
 
 
 export default function Ourproducts() {
-    const [data, setData] = useState({ hits: [] });
-    const [isLoading, setIsLoading] = useState(true);
 
     const settings = {
         className: "center",
@@ -55,22 +50,13 @@ export default function Ourproducts() {
             }]
     };
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const result = await axios.get(process.env.REACT_APP_PROXY+'/api/landproducts');
-            setData(result.data);
-            setIsLoading(false);
-        };
-        fetchData();
-    },[])
-
     return (
         <Box mb={'5%'}>
             <Flex direction='column' align='center' justify='center' m='5' data-aos='fade-down'>
-                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#000000">
+                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#000000" align={'center'}>
                     Facilities At
                 </Text>
-                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#2C7D42">
+                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#2C7D42" align={'center'}>
                     Vedic India Cultural Center
                 </Text>
             </Flex>
@@ -86,9 +72,6 @@ export default function Ourproducts() {
                     <Facility IMAGE={Facility8} name={"Auditorium"} desc={"The cultural fests will be conducted in a state-of-the-art auditorium with a seating capacity of more than 1000 people. The auditorium will also showcase documentaries about lives of great acharyas and pastimes of the Supreme Lord."}/>
                 </Slider>
             </Stack>
-            <Flex direction='row' align='center' justify='center' m='8'>
-                <Explore/>
-            </Flex>
         </Box>
     )
 }

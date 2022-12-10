@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react'
-import {NavLink, Link} from 'react-router-dom'
-import {Box, Flex, Text, Menu, MenuButton, MenuList, MenuItem, Button, Image} from "@chakra-ui/react"
-import { CloseIcon, HamburgerIcon, ChevronDownIcon, ChevronRightIcon} from "@chakra-ui/icons"
-import axios from 'axios'
+import React from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
+import {Box, Flex, Text, Image} from "@chakra-ui/react"
+import { CloseIcon, HamburgerIcon,} from "@chakra-ui/icons"
 import Logo from "../assets/iskcon-logo.svg"
 
 const MenuItems = (props) => {
@@ -15,7 +14,16 @@ const MenuItems = (props) => {
         fontWeight="bold"
         fontSize="lg"
       >
-        <NavLink exact to={to} >{children}</NavLink>
+        <Link
+            activeClass="active"
+            to={to}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={2000}
+        >
+          <Text _hover={{cursor:'pointer'}}>{children}</Text>
+          </Link>
       </Text>
     )
   }
@@ -23,17 +31,7 @@ const MenuItems = (props) => {
 export default function Navbar() {
     const [show, setShow] = React.useState(false)
     const toggleMenu = () => setShow(!show)
-    const [data, setData] = useState({ hits: [] });
-    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-      const fetchData = async () => {
-          const result = await axios.get(process.env.REACT_APP_PROXY+'/api/category');
-          setData(result.data);
-          setIsLoading(false);
-      };
-      fetchData();
-    },[])
     
     return (
       <Box>
@@ -61,9 +59,9 @@ export default function Navbar() {
           direction={{base:"column", md:"row"}}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItems to="/">HOME</MenuItems>
-          <MenuItems to="/about">ABOUT US</MenuItems>
-          <MenuItems to="/contact" >CONTACT US</MenuItems> 
+          <MenuItems to="home">HOME</MenuItems>
+          <MenuItems to="about">ABOUT US</MenuItems>
+          <MenuItems to="footer" >CONTACT US</MenuItems> 
         </Flex>
       </Box>
     </Flex>
