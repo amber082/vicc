@@ -111,7 +111,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                         Click To Donate 1 Lakh
                     </Button>
                 </Link>
-                <Link href='https://rzp.io/l/VICC-Brick' isExternal>
+                <Link href='https://rzp.io/l/VICC-Sqfeet' isExternal>
                     <Button px='6'
                                 mt='5' 
                                 bg='#F0E6CB' 
@@ -124,7 +124,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                         Click To Donate Sq. Feet
                     </Button>
                 </Link>
-                <Link href='https://rzp.io/l/VICC-Sqfeet' isExternal>
+                <Link href='https://rzp.io/l/VICC-Brick' isExternal>
                     <Button px='6'
                                 mt='5' 
                                 bg='#F0E6CB' 
