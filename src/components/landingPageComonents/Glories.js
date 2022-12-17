@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, Box } from '@chakra-ui/react'
 import React from 'react'
 import {ImQuotesLeft} from 'react-icons/im'
 
@@ -6,11 +6,18 @@ export default function Whatwedo() {
     return (
         <div>
             <Flex direction={{base:'column-reverse',md:'row'}} align='center' justify='space-evenly' wrap='nowrap' bg='#F0E6CB' p={'5%'}>
-                <div data-aos='fade-right'>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
+                <Box display={{base:'none',md:'block'}}>
+                    <div data-aos='fade-right'>
+                        <iframe width="840" height="473" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                </Box>
+                <Box display={{base:'block',md:'none'}} mt='50%'>
+                    <div data-aos='fade-right'>
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                </Box>
                 <div data-aos='fade-left'>
-                    <Flex direction='column' align={{base:'center',md:'flex-start'}} justify='center' wrap='nowrap' boxSize={{base:'300',md:'500'}}>
+                    <Flex direction='column' align={{base:'center',md:'flex-start'}} justify='center' wrap='nowrap' boxSize={{base:'300',md:'500'}} mt={{base:'45%', md:'0'}}>
                         <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#000000" align={'center'}>
                             GLORIES OF
                         </Text>

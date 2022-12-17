@@ -39,18 +39,18 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
             }]
     };
     return (
-        <Flex direction='row' align='baseline' justify='space-around' p='5' wrap='nowrap' bg={'#1E592E'}>
-            <Flex direction='column' align='center' justify='space-around' p='5' wrap='nowrap' boxSize={'xl'}>
-                <Text fontSize={{base:'3xl',md:'4xl'}} fontWeight='900' color="#F0E6CB" data-aos='fade-down'>
+        <Flex direction={{base:'column',md:'row'}} align='baseline' justify='space-around' p='5' wrap='nowrap' bg={'#1E592E'}>
+            <Flex direction='column' align='center' justify='space-around' p='5' ml={{base:'-5%',md:'0'}} wrap='nowrap' boxSize={{base:'sm',md:'xl'}}>
+                <Text fontSize={{base:'3xl',md:'4xl'}} fontWeight='900' color="#F0E6CB" data-aos='fade-down' align={'center'}>
                     {DonorTitle}
                 </Text>
                 <Stack data-aos='fade-up'>
                     <Slider {...settings} >
                         <Donor Name={'Mr. Amber Saxena'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
-                        <Donor Name={'Mr. Amarjeet Sinha'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
-                        <Donor Name={'Mr. Prabhash Kumar'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
-                        <Donor Name={'Mr. Dhawal Krishna'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
-                        <Donor Name={'Mr. Sandeep Krishna'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
+                        <Donor Name={'Mr. Amber Saxena'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
+                        <Donor Name={'Mr. Amber Saxena'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
+                        <Donor Name={'Mr. Amber Saxena'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
+                        <Donor Name={'Mr. Amber Saxena'} IMAGE={DonorImage} WIDTH={WIDTH} COLOR={COLOR}/>
                     </Slider>
                 </Stack>
             </Flex>
@@ -65,7 +65,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                     Account Name - 
                 </Text>
                 <Text fontSize={{base:'xl',md:'2xl'}} fontWeight='900' color="#FFFFFF" align={'center'}>
-                    Isckon Project
+                    ISKCON Project
                 </Text>
                 <Text fontSize={{base:'xl',md:'xl'}} fontWeight='900' color="#000" align={'center'}>
                     Account Number -
@@ -95,7 +95,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                                 boxShadow='xl'
                                 display={Donate5}        
                     >
-                        Click To Donate 5 Lakhs
+                        Click here to Donate ONLINE
                     </Button>
                 </Link>
                 <Link href='https://rzp.io/i/bEteC5OZXK' isExternal>
@@ -108,7 +108,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                                 boxShadow='xl'
                                 display={Donate1}        
                     >
-                        Click To Donate 1 Lakh
+                        Click here to Donate ONLINE
                     </Button>
                 </Link>
                 <Link href='https://rzp.io/l/VICC-Sqfeet' isExternal>
@@ -121,7 +121,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                                 boxShadow='xl'
                                 display={DonateSq}        
                     >
-                        Click To Donate Sq. Feet
+                        Click here to Donate ONLINE
                     </Button>
                 </Link>
                 <Link href='https://rzp.io/l/VICC-Brick' isExternal>
@@ -134,7 +134,7 @@ export default function Howwedo({DonorImage, WIDTH, slidesToShowInSlider, COLOR,
                                 boxShadow='xl'
                                 display={DonateBr}        
                     >
-                        Click To Donate Brick
+                        Click here to Donate ONLINE
                     </Button>
                 </Link>
             </Flex>

@@ -6,7 +6,7 @@ import '@fontsource/playball'
 export default function Explore({Name, IMAGE, WIDTH, COLOR}) {
     return (
         <Flex direction={'column'} align='center' justifyContent={'center'} py='2%'>
-            <Text zIndex='2' position={'absolute'} fontSize='2xl' fontWeight={'medium'} color={COLOR} fontFamily={'Playball'}>{Name}</Text>
+            <Text zIndex='2' position={'absolute'} fontSize='2xl' fontWeight={'medium'} color={COLOR} fontFamily={'Playball'} opacity='60%'>{Name}</Text>
             <Image src={IMAGE} zIndex='1' width={WIDTH}/>
         </Flex>
     )

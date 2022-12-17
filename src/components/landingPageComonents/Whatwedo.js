@@ -11,7 +11,7 @@ export default function Whatwedo() {
 
     return (
             <Flex direction={{base:'column',md:'row'}} align='center' justify='space-evenly' wrap='nowrap' mb={{base:'40%',md:'10%'}} id='about'>
-                <Box data-aos='fade-right' mt={{base:'-10%',md:'0'}} mb={{base:'20%', md:'0'}} align='center'>
+                <Box data-aos='fade-right' mt={{base:'-10%',md:'0'}} mb={{base:'35%', md:'0'}} align='center'>
                     <Image objectFit='fill' alt='RadhaGopal' src={RadhaGopal} boxSize={{base:'350',md:'550'}}  px={{base:'4',md:''}}></Image>
                 </Box>
                 <Box data-aos='fade-left'>
