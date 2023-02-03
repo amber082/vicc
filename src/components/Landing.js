@@ -9,6 +9,7 @@ import Ourfacilities from './landingPageComonents/OurFacilities'
 import Budget from './landingPageComonents/Budget';
 import Donation from './DonationComp'
 import About from './About'
+import Construction from './landingPageComonents/Construction'
 import DonationImage from '../assets/donation1.svg'
 
 
@@ -27,6 +28,7 @@ export default function Landing() {
             <Glories/>
             <Budget/>
             <Donation/>
+            <Construction/>
         </div>
     )
 }

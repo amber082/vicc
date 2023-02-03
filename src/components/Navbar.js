@@ -57,11 +57,16 @@ export default function Navbar() {
           align="center"
           justify={{base:"center", md:"flex-end"}}
           direction={{base:"column", md:"row"}}
-          pt={[4, 4, 0, 0]}
+          pt={[2, 2, 0, 0]}
+          textAlign='center'
+          // background={{base:'black',md:''}}
+          // opacity='50%'
+          // rounded={'md'}
         >
           <MenuItems to="home">HOME</MenuItems>
           <MenuItems to="about">ABOUT US</MenuItems>
-          <MenuItems to="footer" >CONTACT US</MenuItems> 
+          <MenuItems to="footer" >CONTACT US</MenuItems>
+          <MenuItems to="construction">CONSTRUCTION UPDATES</MenuItems> 
         </Flex>
       </Box>
     </Flex>
