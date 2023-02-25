@@ -3,11 +3,13 @@ import Construct1 from '../../assets/construct1.jpeg'
 import Construct2 from '../../assets/construct2.jpeg'
 import Construct3 from '../../assets/construct3.jpeg'
 import Construct4 from '../../assets/construct4.jpeg'
+import Construct5 from '../../assets/construct5.jpeg'
+import ConstructVid from '../../assets/constructvid1.mp4'
 import Construct from '../Construct'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import {Flex, Stack, Text, Box } from '@chakra-ui/layout';
+import {Flex, Stack, Text, Box, AspectRatio } from '@chakra-ui/layout';
 import Explore from './Explore'
 
 
@@ -62,6 +64,10 @@ export default function Ourproducts() {
                     <Construct IMAGE={Construct2} />
                     <Construct IMAGE={Construct3} />
                     <Construct IMAGE={Construct4} />
+                    <Construct IMAGE={Construct5} />
+                    <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
+                        <iframe title='Construction Video' src={ConstructVid} allowFullScreen/>
+                    </AspectRatio>
                 </Slider>
             </Stack>
             <Text fontSize={{base:'md',md:'xl'}} fontWeight='900' align='center' justify='center' m='2' data-aos='fade-down'>
