@@ -59,50 +59,50 @@ import {
         </chakra.h1>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, lg: 8 }}>
           <StatsCard
-            title={'TEMPLE HALL & PARAPHERNALIA'}
+            title={'TEMPLE HALL & GARBHA GRIHA'}
             stat={'₹ 8 Crore'}
             icon={<GiByzantinTemple size={'3em'} />}
             delay={'0'}
           />
           <StatsCard
-            title={'MULTIPURPOSE HALLS & KITCHEN'}
+            title={'GOVINDA\'s RESTAURANT, FOOD & GIFT STALLS'}
             stat={'₹ 6 Crore'}
-            icon={<TbToolsKitchen2 size={'3em'} />}
+            icon={<GiFoodTruck size={'3em'} />}
             delay={'0'}
+          />
+          <StatsCard
+            title={'KITCHEN & GARDEN'}
+            stat={'₹ 2 Crore'}
+            icon={<TbToolsKitchen2 size={'3em'} />}
+            delay={'200'}
+          />
+          <StatsCard
+            title={'SADHU NIVAS & GURUKUL'}
+            stat={'₹ 4 Crore'}
+            icon={<MdOutlineLocalLibrary size={'3em'} />}
+            delay={'200'}
+          />
+          <StatsCard
+            title={'BANQUET & AUDITORIUM'}
+            stat={'₹ 5 Crore'}
+            icon={<GiMeditation size={'3em'} />}
+            delay={'400'}
           />
           <StatsCard
             title={'GUEST ROOMS & OFFICES'}
             stat={'₹ 6 Crore'}
             icon={<MdMeetingRoom size={'3em'} />}
-            delay={'200'}
-          />
-          <StatsCard
-            title={'GIFT & FOOD STALLS'}
-            stat={'₹ 3 Crore'}
-            icon={<GiFoodTruck size={'3em'} />}
-            delay={'200'}
-          />
-          <StatsCard
-            title={'BRAHMACARI ASHRAM'}
-            stat={'₹ 3 Crore'}
-            icon={<GiMeditation size={'3em'} />}
             delay={'400'}
           />
           <StatsCard
-            title={'VIDYASHRAM HALL'}
-            stat={'₹ 2 Crore'}
-            icon={<MdOutlineLocalLibrary size={'3em'} />}
-            delay={'400'}
-          />
-          <StatsCard
-            title={'BHAGWAT VIDYAPEETH & DHARMA KENDRA'}
+            title={'VIDYAPEETH, LIBRARY & ACADEMIES'}
             stat={'₹ 4 Crore'}
             icon={<GiTeacher size={'3em'} />}
             delay={'600'}
           />
           <StatsCard
             title={'ANNADANA & SAMSKARA HALL'}
-            stat={'₹ 3 Crore'}
+            stat={'₹ 5 Crore'}
             icon={<BiDonateBlood size={'3em'} />}
             delay={'600'}
           />
