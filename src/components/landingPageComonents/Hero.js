@@ -13,7 +13,7 @@ export default function Hero() {
                 <div data-aos='fade-up'>
                 <Flex  direction='column' align={{base:'center',md:'flex-start'}} justify='space-around' wrap='wrap' >
                     <Heading fontSize={{base:'3xl',md:'6xl'}} fontWeight='920' color="#F0E6CB" letterSpacing='1px' display='flex' alignItems={{base:'center',md:'flex-start'}} flexDirection='column'> 
-                        <Text>VEDIC INDIAN</Text>
+                        <Text>VEDIC INDIA</Text>
                         <Text>CULTURAL CENTER</Text>
                     </Heading>
                     <Heading fontSize={{base:'small',md:'medium'}} fontWeight='920' color="#F0E6CB" letterSpacing='1px' display='flex' alignItems={{base:'center',md:'flex-start'}} flexDirection='row'> 
