@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import About from './components/About'
@@ -13,7 +13,7 @@ import Register from './components/Registration'
 function App() {
   return (
     <div style={{overflowX:'hidden'}}>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar/>
         <Switch>
           <Route exact path="/" component={Landing}/>
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/contact" component={Contact}/>
         </Switch>
         <Footer/>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
