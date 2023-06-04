@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, {useEffect} from 'react'
 import Donation from './donationComponents/Donation'
 import DonationImage1 from '../assets/donation1.svg'
 import DonationImage2 from '../assets/donation2.svg'
@@ -19,9 +19,16 @@ import Donor6 from '../assets/donor6.svg'
 import Donor7 from '../assets/donor7.svg'
 import Donor8 from '../assets/donor8.png'
 import Donor9 from '../assets/donor9.svg'
+import AOS from 'aos';
 
 
 export default function DonationComp() {
+
+  useEffect(() => {
+    AOS.init({duration:1000});
+    AOS.refresh();
+  },[])
+
   return (
     <Box id='donation'>
         <Flex direction={{base:'column',md:'column'}} align='center' justify='center' m='5' data-aos='fade-down'>
