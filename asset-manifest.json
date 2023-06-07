@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.43cd3aab.chunk.css",
-    "main.js": "/static/js/main.e01b5509.chunk.js",
-    "main.js.map": "/static/js/main.e01b5509.chunk.js.map",
+    "main.js": "/static/js/main.5b513a75.chunk.js",
+    "main.js.map": "/static/js/main.5b513a75.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d5958aae.js",
     "runtime-main.js.map": "/static/js/runtime-main.d5958aae.js.map",
     "static/css/2.0eeb2979.chunk.css": "/static/css/2.0eeb2979.chunk.css",
-    "static/js/2.d0d30616.chunk.js": "/static/js/2.d0d30616.chunk.js",
-    "static/js/2.d0d30616.chunk.js.map": "/static/js/2.d0d30616.chunk.js.map",
+    "static/js/2.e5881860.chunk.js": "/static/js/2.e5881860.chunk.js",
+    "static/js/2.e5881860.chunk.js.map": "/static/js/2.e5881860.chunk.js.map",
     "static/js/3.ea970347.chunk.js": "/static/js/3.ea970347.chunk.js",
     "static/js/3.ea970347.chunk.js.map": "/static/js/3.ea970347.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0eeb2979.chunk.css.map": "/static/css/2.0eeb2979.chunk.css.map",
     "static/css/main.43cd3aab.chunk.css.map": "/static/css/main.43cd3aab.chunk.css.map",
-    "static/js/2.d0d30616.chunk.js.LICENSE.txt": "/static/js/2.d0d30616.chunk.js.LICENSE.txt",
+    "static/js/2.e5881860.chunk.js.LICENSE.txt": "/static/js/2.e5881860.chunk.js.LICENSE.txt",
     "static/media/academy1.a5546b89.jpg": "/static/media/academy1.a5546b89.jpg",
     "static/media/academy10.26354b39.jpg": "/static/media/academy10.26354b39.jpg",
     "static/media/academy11.d6313b40.jpg": "/static/media/academy11.d6313b40.jpg",
@@ -63,6 +63,7 @@
     "static/media/facility6.01b5e7f0.jpg": "/static/media/facility6.01b5e7f0.jpg",
     "static/media/facility7.d8092d0b.jpg": "/static/media/facility7.d8092d0b.jpg",
     "static/media/facility8.33eee751.jpeg": "/static/media/facility8.33eee751.jpeg",
+    "static/media/green_logo.b3c49979.svg": "/static/media/green_logo.b3c49979.svg",
     "static/media/iskcon-logo.c509c126.svg": "/static/media/iskcon-logo.c509c126.svg",
     "static/media/index.css": "/static/media/playball-vietnamese-400-normal.f159d64d.woff2",
     "static/media/prabhupada.707a362d.svg": "/static/media/prabhupada.707a362d.svg",
@@ -74,8 +75,8 @@
   "entrypoints": [
     "static/js/runtime-main.d5958aae.js",
     "static/css/2.0eeb2979.chunk.css",
-    "static/js/2.d0d30616.chunk.js",
+    "static/js/2.e5881860.chunk.js",
     "static/css/main.43cd3aab.chunk.css",
-    "static/js/main.e01b5509.chunk.js"
+    "static/js/main.5b513a75.chunk.js"
   ]
 }
