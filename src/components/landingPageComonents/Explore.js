@@ -12,7 +12,7 @@ export default function Explore() {
             offset={-70}
             duration={2000}
         >
-            <Button px='6'
+            <Button px='10'
                         mt='5' 
                         bg='#F0E6CB' 
                         color='#000' 

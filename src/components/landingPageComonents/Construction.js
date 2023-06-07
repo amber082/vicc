@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Construct1 from '../../assets/construct1.jpeg'
 import Construct2 from '../../assets/construct2.jpeg'
 import Construct3 from '../../assets/construct3.jpeg'
@@ -11,9 +11,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {Flex, Stack, Text, Box, AspectRatio } from '@chakra-ui/layout';
 import Explore from './Explore'
+import AOS from 'aos';
 
 
 export default function Ourproducts() {
+
+    useEffect(() => {
+        AOS.init({duration:1000});
+        AOS.refresh();
+      },[])
 
     const settings = {
         className: "center",
