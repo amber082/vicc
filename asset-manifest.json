@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.43cd3aab.chunk.css",
-    "main.js": "/static/js/main.b2fcfaf0.chunk.js",
-    "main.js.map": "/static/js/main.b2fcfaf0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d5958aae.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d5958aae.js.map",
+    "main.js": "/static/js/main.78042dc0.chunk.js",
+    "main.js.map": "/static/js/main.78042dc0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.86ccae3c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.86ccae3c.js.map",
     "static/css/2.0eeb2979.chunk.css": "/static/css/2.0eeb2979.chunk.css",
-    "static/js/2.e5881860.chunk.js": "/static/js/2.e5881860.chunk.js",
-    "static/js/2.e5881860.chunk.js.map": "/static/js/2.e5881860.chunk.js.map",
-    "static/js/3.ea970347.chunk.js": "/static/js/3.ea970347.chunk.js",
-    "static/js/3.ea970347.chunk.js.map": "/static/js/3.ea970347.chunk.js.map",
+    "static/js/2.fdfee64e.chunk.js": "/static/js/2.fdfee64e.chunk.js",
+    "static/js/2.fdfee64e.chunk.js.map": "/static/js/2.fdfee64e.chunk.js.map",
+    "static/js/3.c84ac01f.chunk.js": "/static/js/3.c84ac01f.chunk.js",
+    "static/js/3.c84ac01f.chunk.js.map": "/static/js/3.c84ac01f.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0eeb2979.chunk.css.map": "/static/css/2.0eeb2979.chunk.css.map",
     "static/css/main.43cd3aab.chunk.css.map": "/static/css/main.43cd3aab.chunk.css.map",
-    "static/js/2.e5881860.chunk.js.LICENSE.txt": "/static/js/2.e5881860.chunk.js.LICENSE.txt",
+    "static/js/2.fdfee64e.chunk.js.LICENSE.txt": "/static/js/2.fdfee64e.chunk.js.LICENSE.txt",
     "static/media/academy1.a5546b89.jpg": "/static/media/academy1.a5546b89.jpg",
     "static/media/academy10.26354b39.jpg": "/static/media/academy10.26354b39.jpg",
     "static/media/academy11.d6313b40.jpg": "/static/media/academy11.d6313b40.jpg",
@@ -36,6 +36,7 @@
     "static/media/construct4.8208f670.jpeg": "/static/media/construct4.8208f670.jpeg",
     "static/media/construct5.2fd0bc41.jpeg": "/static/media/construct5.2fd0bc41.jpeg",
     "static/media/contact.d2df0c86.svg": "/static/media/contact.d2df0c86.svg",
+    "static/media/donate_bg.c4f0396f.png": "/static/media/donate_bg.c4f0396f.png",
     "static/media/donation1.f4f97c91.svg": "/static/media/donation1.f4f97c91.svg",
     "static/media/donation2.e46651ca.svg": "/static/media/donation2.e46651ca.svg",
     "static/media/donation3.cf7e8c9a.svg": "/static/media/donation3.cf7e8c9a.svg",
@@ -65,18 +66,19 @@
     "static/media/facility8.33eee751.jpeg": "/static/media/facility8.33eee751.jpeg",
     "static/media/green_logo.b3c49979.svg": "/static/media/green_logo.b3c49979.svg",
     "static/media/iskcon-logo.c509c126.svg": "/static/media/iskcon-logo.c509c126.svg",
+    "static/media/iskcon_upi.bafbe7b8.jpg": "/static/media/iskcon_upi.bafbe7b8.jpg",
     "static/media/index.css": "/static/media/playball-vietnamese-400-normal.f159d64d.woff2",
     "static/media/prabhupada.707a362d.svg": "/static/media/prabhupada.707a362d.svg",
     "static/media/radhagopal.bf1daa9d.svg": "/static/media/radhagopal.bf1daa9d.svg",
     "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
     "static/media/success.da097a1d.svg": "/static/media/success.da097a1d.svg",
-    "static/media/temple.275da5e5.png": "/static/media/temple.275da5e5.png"
+    "static/media/temple_2.43af8fa6.png": "/static/media/temple_2.43af8fa6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d5958aae.js",
+    "static/js/runtime-main.86ccae3c.js",
     "static/css/2.0eeb2979.chunk.css",
-    "static/js/2.e5881860.chunk.js",
+    "static/js/2.fdfee64e.chunk.js",
     "static/css/main.43cd3aab.chunk.css",
-    "static/js/main.b2fcfaf0.chunk.js"
+    "static/js/main.78042dc0.chunk.js"
   ]
 }
