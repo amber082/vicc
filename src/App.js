@@ -3,7 +3,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
-import Donation from './components/DonationComp'
+import Donation from './components/DonatePage'
 import AboutUs from './components/AboutUs'
 import Construct from './components/landingPageComonents/Construction';
 import Footer from './components/Footer'

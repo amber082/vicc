@@ -53,7 +53,7 @@ export default function Navbar() {
     const location = useLocation();
 
     useEffect(() => {
-      location.pathname == '/' ? setIsHome(true) : setIsHome(false)
+      location.pathname == '/' || location.pathname == '/donate' ? setIsHome(true) : setIsHome(false)
     },[location])
 
     

@@ -30,7 +30,7 @@ export default function DonationComp() {
   },[])
 
   return (
-    <Box id='donation'>
+    <Box>
         <Flex direction={{base:'column',md:'column'}} align='center' justify='center' m='5' data-aos='fade-down'>
             <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#000000" align={'center'}>
                 Seva

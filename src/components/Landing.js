@@ -17,6 +17,7 @@ import DonationImage from '../assets/donation1.svg'
 export default function Landing() {
     useEffect(() => {
         AOS.init({duration:1000});
+        AOS.refresh();
       }, []);
     return (
         <div>
