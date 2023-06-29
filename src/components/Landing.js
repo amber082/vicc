@@ -11,6 +11,7 @@ import Donation from './DonationComp'
 import About from './About'
 import Construction from './landingPageComonents/Construction'
 import DonationImage from '../assets/donation1.svg'
+import TempleMock from './landingPageComonents/TempleMock'
 
 
 
@@ -30,6 +31,7 @@ export default function Landing() {
             <Budget/>
             <Donation/>
             <Construction/>
+            <TempleMock/>
         </div>
     )
 }

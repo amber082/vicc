@@ -79,24 +79,6 @@ export default function Ourproducts() {
             <Text fontSize={{base:'md',md:'xl'}} fontWeight='900' align='center' justify='center' m='2' data-aos='fade-down'>
                 the construction officially starts today.
             </Text>
-            <Flex direction='column' align='center' justify='center' m='5' data-aos='fade-down'>
-                <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#2C7D42" align={'center'}>
-                    Temple Mockups
-                </Text>
-            </Flex>
-            <Stack mb='5%' data-aos='fade-up'>
-                <Slider {...settings} >
-                    <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
-                        <iframe title='Temple Mockup' src='https://res.cloudinary.com/dkgi3vzew/video/upload/v1688049604/zxfixdyndzehsdwyo69u.mp4' allowFullScreen/>
-                    </AspectRatio>
-                    <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
-                        <iframe title='Temple Mockup' src='https://res.cloudinary.com/dkgi3vzew/video/upload/v1688049604/tjyznjmk8yztr5g1cox1.mp4' allowFullScreen/>
-                    </AspectRatio>
-                    <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
-                        <iframe title='Temple Mockup' src='https://res.cloudinary.com/dkgi3vzew/video/upload/v1688049602/n3qo50pu7dpb91iu3lol.mp4' allowFullScreen/>
-                    </AspectRatio>
-                </Slider>
-            </Stack>
         </Box>
     )
 }

@@ -6,6 +6,8 @@ import Explore from './landingPageComonents/Explore'
 import Donate from './DonationComp'
 import DonateRadio from './DonateRadio'
 import DonationWays from './DonationWays'
+import TempleMock from './landingPageComonents/TempleMock'
+import Glories from './landingPageComonents/Glories'
 import '@fontsource/playball'
 import AOS from 'aos';
 
@@ -42,6 +44,8 @@ export default function Hero() {
             </Flex>
         </Flex>
         <DonationWays/>
+        <TempleMock/>
+        <Glories/>
         <DonateRadio/>
         <Donate/>
         </>
