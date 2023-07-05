@@ -1,6 +1,7 @@
-import { Flex, Text, Box } from '@chakra-ui/react'
+import { Flex, Text, Box, Image } from '@chakra-ui/react'
 import React from 'react'
 import {ImQuotesLeft} from 'react-icons/im'
+import TempleMock from '../../assets/temple_mock.jpg'
 
 export default function Whatwedo() {
     return (
@@ -8,12 +9,14 @@ export default function Whatwedo() {
             <Flex direction={{base:'column-reverse',md:'row'}} align='center' justify='space-evenly' wrap='nowrap' bg='#F0E6CB' p={'5%'}>
                 <Box display={{base:'none',md:'block'}}>
                     <div data-aos='fade-right'>
-                        <iframe width="840" height="473" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        {/* <iframe width="840" height="473" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                        <Image src={TempleMock} width="840" height="473"></Image>
                     </div>
                 </Box>
                 <Box display={{base:'block',md:'none'}} mt='50%'>
                     <div data-aos='fade-right'>
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        {/* <iframe width="320" height="180" src="https://www.youtube.com/embed/9EQ-zkk-cqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                        <Image src={TempleMock} width="320" height="180"></Image>
                     </div>
                 </Box>
                 <div data-aos='fade-left'>

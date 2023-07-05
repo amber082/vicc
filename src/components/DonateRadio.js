@@ -1,6 +1,8 @@
 
-import React, {useState,useEffect} from 'react'
-import {useRadio,Box,Stack, useRadioGroup, Heading, Flex, Text, FormControl, Link, Button,InputGroup, Input, InputLeftAddon} from '@chakra-ui/react'
+import React, {useState,useEffect, useCallback} from 'react'
+import {useRadio,Box,Stack, useRadioGroup, Heading, Flex, Text, FormControl, FormErrorMessage, Button, Input, InputLeftAddon, useDisclosure, FormLabel, FormHelperText,InputGroup} from '@chakra-ui/react'
+import useRazorpay from "react-razorpay";
+import Logo from '../assets/green_logo.svg'
 
 function RadioCard(props) {
     const { getInputProps, getCheckboxProps } = useRadio(props)
@@ -54,13 +56,103 @@ function RadioCard(props) {
         setUrl('https://pages.razorpay.com/VICC-payment?donation_amount='+amount)
     },[amount])
 
-    const handleInputChange = (e) => {
+    const handleAmountChange = (e) => {
         let value = e.currentTarget.value 
         setAmount(value)
         setValue('0')
     }
   
     const group = getRootProps()
+
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [isSubmitted, setIsSubmited] = useState(false)
+    const [isSuccess, setIsSuccess] = useState(false)
+    const [values,setValues] = useState({
+        name:'',
+        phone:'',
+        email:'',
+        nameInvalid:false,
+        phoneInvalid:false,
+        emailInvalid:false,
+    })
+
+    const handleInputChange = (e) => {
+        let name = e.currentTarget.name
+        let value = e.currentTarget.value 
+        let errorName = e.currentTarget.name + "Invalid"
+        let errorValue = false
+        switch(name){
+            case 'name':
+                errorValue = value.length > 0;
+                break;
+            case 'phone':
+                errorValue = value.length > 0 ? value.match(/^[6-9]\d{9}$/i) : true;
+                break;
+            case 'email':
+                errorValue = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+                break;
+        }
+        setValues({
+            ...values,
+            [name]: value,
+            [errorName]: !errorValue
+        })
+        setIsSubmited(false)
+    }
+
+    const Razorpay = useRazorpay();
+
+    useEffect(() => {
+      if(isSubmitted) {
+        handlePayment()
+      }
+    }, [values])
+
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      let nameError = values.name.length > 0;
+      let phoneError = values.phone.length > 0 && values.phone.match(/^[6-9]\d{9}$/i) ;
+      let emailError = values.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+      setValues({
+          ...values,
+          nameInvalid: !nameError,
+          phoneInvalid: !phoneError,
+          emailInvalid: !emailError,
+      })
+      setIsSubmited(true)
+    }
+
+  const handlePayment = useCallback(() => {
+    setIsSubmited(false)
+    if( !values.nameInvalid && !values.phoneInvalid && !values.emailInvalid){
+
+      const options = {
+        key: "rzp_live_ytp7ZCwdzAjKf7",
+        amount: amount*100,
+        currency: "INR",
+        name: "ISKCON VICC",
+        description: "Custom Donation",
+        image: Logo,
+        handler: (res) => {
+          console.log(res);
+        },
+        prefill: {
+          name: values.name,
+          email: values.email,
+          contact: values.phone,
+        },
+        notes: {
+          address: "Iskcon Vicc Razorpay",
+        },
+        theme: {
+          color: "#2C7D42",
+        },
+      };
+
+      const rzpay = new Razorpay(options);
+      rzpay.open();
+    }
+  }, [Razorpay, amount]);
   
     return (
         
@@ -83,25 +175,37 @@ function RadioCard(props) {
       </Stack>
       <Flex direction={{base:'column',md:'row'}} justify={'space-around'}>
       <form>
-      <FormControl id="amount" m='5'>
+        <FormControl id="amount" my='2'>
+          <FormLabel color='#2C7D42'>Enter Amount</FormLabel>
             <InputGroup>
                 <InputLeftAddon children='₹' bg="#2C7D42" color='#F0E6CB'/>
-                <Input type="number" bg="#F0E6CB" boxShadow='xl' name='amount' value={amount} onChange={handleInputChange}/>
+                <Input type="number" bg="#F0E6CB" boxShadow='xl' name='amount' value={amount} onChange={handleAmountChange}/>
             </InputGroup>
         </FormControl>
-        </form>
-        <Link href={url} isExternal>
-            <Button px='6'
-                        mt='5' 
-                        bg='#2C7D42' 
-                        color='#F0E6CB' 
-                        rounded='xl' 
-                        _hover={{bg:'yellow.500', boxShadow:'3xl', color:'black'}} 
-                        boxShadow='xl'      
-            >
-                DONATE ONLINE NOW
-            </Button>
-        </Link>
+        <Flex direction={{base:'column',md:'row'}} justify='space-around'>
+            <FormControl id="name" mr='4' isRequired isInvalid={values.nameInvalid}>
+                <FormLabel color='#2C7D42'>Name</FormLabel>
+                <Input type="text" bg="#F0E6CB" boxShadow='xl' name='name' value={values.name} onChange={handleInputChange}/>
+                <FormErrorMessage>Name is empty</FormErrorMessage>
+            </FormControl>
+            <FormControl id="phone" isRequired isInvalid={values.phoneInvalid}>
+                <FormLabel color='#2C7D42'>Contact No.</FormLabel>
+                <InputGroup>
+                    <InputLeftAddon children='+91' bg="#2C7D42"  color='#F0E6CB'/>
+                    <Input type="tel" bg="#F0E6CB" boxShadow='xl' name='phone' value={values.phone} onChange={handleInputChange}/>
+                </InputGroup>
+                <FormHelperText>We'll never share your contact no.</FormHelperText>
+                <FormErrorMessage>Contact Number is invalid or empty</FormErrorMessage>
+            </FormControl>
+        </Flex>
+        <FormControl id="email" my='2' isRequired isInvalid={values.emailInvalid} >
+            <FormLabel color='#2C7D42'>Email address</FormLabel>
+            <Input type="email" bg="#F0E6CB" boxShadow='xl' name='email' value={values.email} onChange={handleInputChange}/>
+            <FormHelperText>We'll never share your email.</FormHelperText>
+            <FormErrorMessage>Email is invalid or empty</FormErrorMessage>
+        </FormControl>
+          <Button bg='#2C7D42' color='#F0E6CB'  rounded='lg' my='5' _hover={{bg:'green.700', boxShadow:'3xl'}} onClick={handleSubmit}  boxShadow='2xl'>Donate Online Now</Button>
+      </form>
         </Flex>
     </Flex>
     )

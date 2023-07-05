@@ -10,6 +10,7 @@ import TempleMock from './landingPageComonents/TempleMock'
 import Glories from './landingPageComonents/Glories'
 import '@fontsource/playball'
 import AOS from 'aos';
+import Construction from './landingPageComonents/Construction'
 
 export default function Hero() {
     useEffect(() => {
@@ -44,10 +45,11 @@ export default function Hero() {
             </Flex>
         </Flex>
         <DonationWays/>
+        <DonateRadio/>
         <TempleMock/>
         <Glories/>
-        <DonateRadio/>
         <Donate/>
+        <Construction/>
         </>
     )
 }
