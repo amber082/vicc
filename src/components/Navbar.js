@@ -80,7 +80,7 @@ export default function Navbar() {
         // bg="#000000"
         // opacity={'62%'}
         color={isHome ? (!stickyClass ? "#F0E6CB" : "#2C7D42") : "#2C7D42"}
-        position={stickyClass ? 'fixed' : 'relative'}
+        position={{md: stickyClass ? 'relative' : 'relative'}}
         backgroundColor={stickyClass ? "rgba(255, 255, 255, 0.8)" : "rgba(255, 255, 255, 0.0)" } backdropFilter={"saturate(180%) blur(5px)"}
         zIndex={'200'}
         >
