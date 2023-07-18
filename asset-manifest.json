@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.43cd3aab.chunk.css",
-    "main.js": "/static/js/main.42314d4c.chunk.js",
-    "main.js.map": "/static/js/main.42314d4c.chunk.js.map",
+    "main.js": "/static/js/main.0355e724.chunk.js",
+    "main.js.map": "/static/js/main.0355e724.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.add51689.js",
     "runtime-main.js.map": "/static/js/runtime-main.add51689.js.map",
     "static/css/2.44195be8.chunk.css": "/static/css/2.44195be8.chunk.css",
@@ -36,7 +36,6 @@
     "static/media/construct4.8208f670.jpeg": "/static/media/construct4.8208f670.jpeg",
     "static/media/construct5.2fd0bc41.jpeg": "/static/media/construct5.2fd0bc41.jpeg",
     "static/media/contact.d2df0c86.svg": "/static/media/contact.d2df0c86.svg",
-    "static/media/donate_bg.c4f0396f.png": "/static/media/donate_bg.c4f0396f.png",
     "static/media/donation1.f4f97c91.svg": "/static/media/donation1.f4f97c91.svg",
     "static/media/donation2.e46651ca.svg": "/static/media/donation2.e46651ca.svg",
     "static/media/donation3.cf7e8c9a.svg": "/static/media/donation3.cf7e8c9a.svg",
@@ -72,7 +71,6 @@
     "static/media/radhagopal.bf1daa9d.svg": "/static/media/radhagopal.bf1daa9d.svg",
     "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
     "static/media/success.da097a1d.svg": "/static/media/success.da097a1d.svg",
-    "static/media/temple_2.43af8fa6.png": "/static/media/temple_2.43af8fa6.png",
     "static/media/temple_mock.5a67913e.jpg": "/static/media/temple_mock.5a67913e.jpg"
   },
   "entrypoints": [
@@ -80,6 +78,6 @@
     "static/css/2.44195be8.chunk.css",
     "static/js/2.4fff436b.chunk.js",
     "static/css/main.43cd3aab.chunk.css",
-    "static/js/main.42314d4c.chunk.js"
+    "static/js/main.0355e724.chunk.js"
   ]
 }
