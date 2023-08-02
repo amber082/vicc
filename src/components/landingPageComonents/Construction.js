@@ -1,9 +1,12 @@
 import React, {useEffect} from 'react'
-import Construct1 from '../../assets/construct1.jpeg'
-import Construct2 from '../../assets/construct2.jpeg'
-import Construct3 from '../../assets/construct3.jpeg'
-import Construct4 from '../../assets/construct4.jpeg'
-import Construct5 from '../../assets/construct5.jpeg'
+import Construct1 from '../../assets/Construct1.jpeg'
+import Construct2 from '../../assets/Construct2.jpeg'
+import Construct3 from '../../assets/Construct3.jpeg'
+import Construct4 from '../../assets/Construct4.jpeg'
+import Construct5 from '../../assets/Construct5.jpeg'
+import Construct6 from '../../assets/Construct6.jpeg'
+import Construct7 from '../../assets/Construct7.jpeg'
+import Construct8 from '../../assets/Construct8.jpeg'
 // import ConstructVid from '../../assets/constructvid1.mp4'
 import Construct from '../Construct'
 import "slick-carousel/slick/slick.css"; 
@@ -61,7 +64,7 @@ export default function Ourproducts() {
                     Construction Updates
                 </Text>
                 <Text fontSize={{base:'3xl',md:'5xl'}} fontWeight='950' color="#2C7D42" align={'center'}>
-                    Construction updates as on 1st February
+                    Construction updates as on 1st August 2023
                 </Text>
             </Flex>
             <Stack mb='5%' data-aos='fade-up'>
@@ -71,13 +74,16 @@ export default function Ourproducts() {
                     <Construct IMAGE={Construct3} />
                     <Construct IMAGE={Construct4} />
                     <Construct IMAGE={Construct5} />
+                    <Construct IMAGE={Construct6} />
+                    <Construct IMAGE={Construct7} />
+                    <Construct IMAGE={Construct8} />
                 </Slider>
             </Stack>
             <Text fontSize={{base:'md',md:'xl'}} fontWeight='900' align='center' justify='center' m='2' data-aos='fade-down'>
                 ISKCON VICC Construction updates: The demolition work has been completed & temple foundation is being laid
             </Text>
             <Text fontSize={{base:'md',md:'xl'}} fontWeight='900' align='center' justify='center' m='2' data-aos='fade-down'>
-                the construction officially starts today.
+                the construction officially starts as of 1st February 2023.
             </Text>
         </Box>
     )
