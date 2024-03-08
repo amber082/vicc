@@ -64,13 +64,13 @@ export default function Ourproducts() {
             <Stack mb='5%' data-aos='fade-up' >
                 <Slider {...settings} >
                     <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
-                        <iframe title='Temple Mockup' src='https://res.cloudinary.com/dkgi3vzew/video/upload/v1688049604/zxfixdyndzehsdwyo69u.mp4' allowFullScreen/>
+                        <iframe title='Temple Mockup' src='https://ik.imagekit.io/cw8gn2alz/temple_mock_1.mp4' allowFullScreen/>
                     </AspectRatio>
                     <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
-                        <iframe title='Temple Mockup' src='https://res.cloudinary.com/dkgi3vzew/video/upload/v1688049604/tjyznjmk8yztr5g1cox1.mp4' allowFullScreen/>
+                        <iframe title='Temple Mockup' src='https://ik.imagekit.io/cw8gn2alz/temple_mock_2.mp4' allowFullScreen/>
                     </AspectRatio>
                     <AspectRatio maxWidth={840} ratio={1.7} mt='7%'>
-                        <iframe title='Temple Mockup' src='https://res.cloudinary.com/dkgi3vzew/video/upload/v1688049602/n3qo50pu7dpb91iu3lol.mp4' allowFullScreen/>
+                        <iframe title='Temple Mockup' src='https://ik.imagekit.io/cw8gn2alz/temple_mock_3.mp4' allowFullScreen/>
                     </AspectRatio>
                 </Slider>
             </Stack>
